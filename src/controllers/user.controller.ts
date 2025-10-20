@@ -1,6 +1,6 @@
 import { Response } from "express";
-import { AuthRequest } from "../middleware/auth.js";
-import { User } from "../models/User.js";
+import { AuthRequest } from "../middleware/auth";
+import { User } from "../models/User";
 import bcrypt from "bcryptjs";
 
 export async function me(req: AuthRequest, res: Response) {
