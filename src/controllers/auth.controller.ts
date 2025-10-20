@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { User } from "../models/User";
+import { User } from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
-import { sendMail } from "../utils/mail";
+import { sendMail } from "../utils/mail.js";
 
 export async function signUp(req: Request, res: Response) {
   const { firstName, lastName, age, email, password } = req.body;
